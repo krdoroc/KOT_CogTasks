@@ -1,0 +1,120 @@
+i_full_sample_Question6_QuestionID,LN.33
+i_full_sample_Question6_hasImage,False
+i_full_sample_Question6_QuestionPrompt,In the following alphanumeric series- what letter comes next?  V- Q- M- J- H- _
+i_full_sample_Question6_Choices,E-F-G-H-I-J-None of these-I do not know
+i_full_sample_Question6_CorrectChoiceIndex,2
+i_full_sample_Question15_QuestionID,R3D.6
+i_full_sample_Question15_hasImage,True
+i_full_sample_Question15_QuestionPrompt,All the cubes below have a different image on each side. Select the choice that represents a rotation of the cube labeled X.
+i_full_sample_Question15_Choices,A-B-C-D-E-F-G-H
+i_full_sample_Question15_CorrectChoiceIndex,5
+i_full_sample_Question14_QuestionID,R3D.4
+i_full_sample_Question14_hasImage,True
+i_full_sample_Question14_QuestionPrompt,All the cubes below have a different image on each side. Select the choice that represents a rotation of the cube labeled X.
+i_full_sample_Question14_Choices,A-B-C-D-E-F-G-H
+i_full_sample_Question14_CorrectChoiceIndex,1
+i_full_sample_Question7_QuestionID,LN.34
+i_full_sample_Question7_hasImage,False
+i_full_sample_Question7_QuestionPrompt,In the following alphanumeric series- what letter comes next?  I- J- L- O- S- _
+i_full_sample_Question7_Choices,T-U-V-X-Y-Z-None of these-I do not know
+i_full_sample_Question7_CorrectChoiceIndex,3
+i_full_sample_Question13_QuestionID,R3D.3
+i_full_sample_Question13_hasImage,True
+i_full_sample_Question13_QuestionPrompt,All the cubes below have a different image on each side. Select the choice that represents a rotation of the cube labeled X.
+i_full_sample_Question13_Choices,A-B-C-D-E-F-G-H
+i_full_sample_Question13_CorrectChoiceIndex,2
+i_full_sample_Question12_QuestionID,MX.55
+i_full_sample_Question12_hasImage,True
+i_full_sample_Question12_QuestionPrompt,Which is the correct answer in the sequence?
+i_full_sample_Question12_Choices,A-B-C-D-E-F-None of these-I do not know
+i_full_sample_Question12_CorrectChoiceIndex,3
+i_full_sample_Question1_QuestionID,VR.4
+i_full_sample_Question1_hasImage,False
+i_full_sample_Question1_QuestionPrompt,What number is one fifth of one fourth of one ninth of 900?
+i_full_sample_Question1_Choices,2-3-4-5-6-7-None of these-I do not know
+i_full_sample_Question1_CorrectChoiceIndex,3
+i_full_sample_Question11_QuestionID,MX.47
+i_full_sample_Question11_hasImage,True
+i_full_sample_Question11_QuestionPrompt,Which is the correct answer in the sequence?
+i_full_sample_Question11_Choices,A-B-C-D-E-F-None of these-I do not know
+i_full_sample_Question11_CorrectChoiceIndex,1
+i_full_sample_Question2_QuestionID,VR.16
+i_full_sample_Question2_hasImage,False
+i_full_sample_Question2_QuestionPrompt,Zach is taller than Matt and Richard is shorter than Zach. Which of the following statements would be most accurate?
+i_full_sample_Question2_Choices,Richard is taller than Matt-Richard is shorter than Matt-Richard is as tall as Matt-It is impossible to tell-Richard is taller than Zach-Zach is shorter than Matt-None of these-I do not know
+i_full_sample_Question2_CorrectChoiceIndex,3
+i_full_sample_Question3_QuestionID,VR.17
+i_full_sample_Question3_hasImage,False
+i_full_sample_Question3_QuestionPrompt,Joshua is 12 years old and his sister is three times as old as he. When Joshua is 23 years old- how old will his sister be?
+i_full_sample_Question3_Choices,35-39-44-47-53-57-None of these-I do not know
+i_full_sample_Question3_CorrectChoiceIndex,3
+i_full_sample_Question10_QuestionID,MX.46
+i_full_sample_Question10_hasImage,True
+i_full_sample_Question10_QuestionPrompt,Which is the correct answer in the sequence?
+i_full_sample_Question10_Choices,A-B-C-D-E-F-None of these-I do not know
+i_full_sample_Question10_CorrectChoiceIndex,1
+i_full_sample_Question4_QuestionID,VR.19
+i_full_sample_Question4_hasImage,False
+i_full_sample_Question4_QuestionPrompt,If the day after tomorrow is two days before Thursday- then what day is it today?
+i_full_sample_Question4_Choices,Friday-Monday-Wednesday-Saturday-Tuesday-Sunday-None of these-I do not know
+i_full_sample_Question4_CorrectChoiceIndex,5
+i_full_sample_Question8_QuestionID,LN.58
+i_full_sample_Question8_hasImage,False
+i_full_sample_Question8_QuestionPrompt,In the following alphanumeric series- what letter comes next?  Q- S- N- P- L- _
+i_full_sample_Question8_Choices,J-H-I-N-M-L-None of these-I do not know
+i_full_sample_Question8_CorrectChoiceIndex,3
+i_full_sample_Question9_QuestionID,MX.45
+i_full_sample_Question9_hasImage,True
+i_full_sample_Question9_QuestionPrompt,Which is the correct answer in the sequence?
+i_full_sample_Question9_Choices,A-B-C-D-E-F-None of these-I do not know
+i_full_sample_Question9_CorrectChoiceIndex,4
+i_full_sample_Question5_QuestionID,LN.7
+i_full_sample_Question5_hasImage,False
+i_full_sample_Question5_QuestionPrompt,In the following alphanumeric series- what letter comes next?  K- N- S- P- U- _
+i_full_sample_Question5_Choices,S-T-U-V-W-X-None of these-I do not know
+i_full_sample_Question5_CorrectChoiceIndex,5
+i_full_sample_Question16_QuestionID,R3D.8
+i_full_sample_Question16_hasImage,True
+i_full_sample_Question16_QuestionPrompt,All the cubes below have a different image on each side. Select the choice that represents a rotation of the cube labeled X.
+i_full_sample_Question16_Choices,A-B-C-D-E-F-G-H
+i_full_sample_Question16_CorrectChoiceIndex,6
+i_matrices_only_Question6_QuestionID,MX.44
+i_matrices_only_Question6_hasImage,True
+i_matrices_only_Question6_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question6_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question6_CorrectChoiceIndex,2
+i_matrices_only_Question7_QuestionID,MX.53
+i_matrices_only_Question7_hasImage,True
+i_matrices_only_Question7_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question7_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question7_CorrectChoiceIndex,2
+i_matrices_only_Question1_QuestionID,MX.45
+i_matrices_only_Question1_hasImage,True
+i_matrices_only_Question1_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question1_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question1_CorrectChoiceIndex,4
+i_matrices_only_Question2_QuestionID,MX.46
+i_matrices_only_Question2_hasImage,True
+i_matrices_only_Question2_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question2_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question2_CorrectChoiceIndex,1
+i_matrices_only_Question3_QuestionID,MX.47
+i_matrices_only_Question3_hasImage,True
+i_matrices_only_Question3_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question3_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question3_CorrectChoiceIndex,1
+i_matrices_only_Question4_QuestionID,MX.55
+i_matrices_only_Question4_hasImage,True
+i_matrices_only_Question4_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question4_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question4_CorrectChoiceIndex,3
+i_matrices_only_Question8_QuestionID,MX.56
+i_matrices_only_Question8_hasImage,True
+i_matrices_only_Question8_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question8_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question8_CorrectChoiceIndex,4
+i_matrices_only_Question5_QuestionID,MX.43
+i_matrices_only_Question5_hasImage,True
+i_matrices_only_Question5_QuestionPrompt,Which is the correct answer in the sequence?
+i_matrices_only_Question5_Choices,A-B-C-D-E-F-None of these-I do not know
+i_matrices_only_Question5_CorrectChoiceIndex,3

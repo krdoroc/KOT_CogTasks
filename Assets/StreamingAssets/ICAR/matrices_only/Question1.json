@@ -1,0 +1,16 @@
+{
+    "QuestionID": "MX.45",
+    "hasImage": true,
+    "QuestionPrompt": "Which is the correct answer in the sequence?",
+    "Choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "None of these",
+      "I do not know"
+    ],
+    "CorrectChoiceIndex": 4
+  }

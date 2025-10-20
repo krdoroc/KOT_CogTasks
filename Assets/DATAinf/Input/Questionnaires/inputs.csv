@@ -1,0 +1,143 @@
+i_ageing_Question6_QuestionID,Aspiration Index
+i_ageing_Question6_MainQuestion,How important is it to you...
+i_ageing_Question6_Choices,1 (Not at all important)^2^3^4 (Moderately important)^5^6^7 (Very important)
+i_ageing_Question6_SubQuestions,"To be rich^To be financially successful^To be admired by many people^To be famous^To achieve the ""look"" I've been after.^To have people comment often about how attractive I look.^To grow and learn new things^To know and accept who I really am.^To feel that there are people who really love me@ and whom I love.^To have deep enduring relationships.^To work to make the world a better place.^To help others improve their lives."
+i_ageing_Question6_HasTextInput,FALSE
+i_ageing_Question0000_QuestionID,Tool helpfulness (Cognitive tasks)
+i_ageing_Question0000_MainQuestion,Please indicate how helpful you found the following tools when solving any of the other cognitive tasks
+i_ageing_Question0000_Choices,N/A (Did not use)^Not at all helpful^Rarely helpful^Sometimes helpful^Generally helpful^Always helpful
+i_ageing_Question0000_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ageing_Question0000_HasTextInput,TRUE
+i_ageing_Question0000_InputMustBeInt,FALSE
+i_ageing_Question0000_TextQuestion,If applicable@ briefly explain in 1-2 sentences why you found a tool helpful or not helpful.
+i_ageing_Question7_QuestionID,Self-rated Cognitive Abilities
+i_ageing_Question7_MainQuestion,How would you describe your...
+i_ageing_Question7_Choices,Poor^Below average^Average^Above average^Excellent
+i_ageing_Question7_SubQuestions,day-to-day memory compared to other people your age?^creativity compared to other people your age?^day-to-day problem-solving ability compared to other people your age?
+i_ageing_Question7_HasTextInput,FALSE
+i_ageing_QuestionLast_QuestionID,Reliability
+i_ageing_QuestionLast_MainQuestion,Your response to this question will not affect your payment in any way.  Please indicate on the scale below how reliable are your answers to this survey.
+i_ageing_QuestionLast_Choices,0 (Not reliable at all)^1^2^3^4^5^6^7^8^9^10 (Very reliable)
+i_ageing_QuestionLast_SubQuestions,
+i_ageing_QuestionLast_HasTextInput,FALSE
+i_ageing_Question0_QuestionID,Tools Used (Knapsack)
+i_ageing_Question0_MainQuestion,Please indicate how often you used the following tools when solving the knapsack task (items with weights and values)
+i_ageing_Question0_Choices,Did not use at all^Used only once or twice^Used sometimes^Used often^Used almost always^Used always
+i_ageing_Question0_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ageing_Question0_HasTextInput,TRUE
+i_ageing_Question0_InputMustBeInt,FALSE
+i_ageing_Question0_TextQuestion,If you used some other tool@ please specify which one.
+i_ageing_Question000_QuestionID,Tools Used (Cognitive Tasks)
+i_ageing_Question000_MainQuestion,Please indicate how often you used the following tools when solving any of the other cognitive tasks
+i_ageing_Question000_Choices,Did not use at all^Used only once or twice^Used sometimes^Used often^Used almost always^Used always
+i_ageing_Question000_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ageing_Question000_HasTextInput,TRUE
+i_ageing_Question000_InputMustBeInt,FALSE
+i_ageing_Question000_TextQuestion,If you used some other tool@ please specify which one.
+i_ageing_Question1_QuestionID,Motivation for Cognition
+i_ageing_Question1_MainQuestion,Please indicate how far the following statements apply to you personally in this moment?
+i_ageing_Question1_Choices,-3 (does not apply at all)^-2^-1^0^1^2^3 (applies exactly)
+i_ageing_Question1_SubQuestions,Right now@ I would really enjoy a task that involves coming up with new solutions to problems^Right now@ I would prefer a task that is intellectual@ difficult@ and important to one that is somewhat important but does not require much thought^Right now@ I would like to solve a puzzle^If I read something that confuses me right now@ I would just put it down and forget it^Right now@ I would rather do something that requires little thought than something that is sure to challenge my thinking abilities^Right now@ I prefer complex to simple problems^Right now@ I prefer to think about small@ daily projects to long-term ones^Right now@ I would like to avoid situations where there is a likely chance I will have to think in depth about something^Right now@ the notion of thinking abstractly is not appealing to me^Right now@ I would enjoy thinking about an issue even when the results of my thought would have no effect on the outcome of the issue
+i_ageing_Question1_HasTextInput,FALSE
+i_ageing_Question2_QuestionID,Jenkins Sleep Scale
+i_ageing_Question2_MainQuestion,How often in the past month did you...
+i_ageing_Question2_Choices,Never^1-3 days^4-7 days^8-14 days^15-21 days^22-31 days
+i_ageing_Question2_SubQuestions,flap your wings and fly directly onto the surface of the sun?^wake up several times per night?^have trouble staying asleep (including waking far too early)?^wake up after your usual amount of sleep feeling tired and worn out?^have trouble falling asleep?
+i_ageing_Question2_HasTextInput,FALSE
+i_ageing_Question3_QuestionID,PANAS
+i_ageing_Question3_MainQuestion,To what extent do you feel this way right now@ in this moment?
+i_ageing_Question3_Choices,Very slightly or not at all^A little^Moderately^Quite a bit^Extremely
+i_ageing_Question3_SubQuestions,Interested^Active^Excited^Alert^Strong^Inspired^Determined^Attentive^Enthusiastic^Proud^Irritable^Hostile^Ashamed^Guilty^Nervous^Distressed^Upset^Jittery^Scared^Afraid
+i_ageing_Question3_HasTextInput,FALSE
+i_ageing_Question4_QuestionID,General Self Efficacy Scale
+i_ageing_Question4_MainQuestion,To what extent do you feel the following statements are true?
+i_ageing_Question4_Choices,Not at all true^Hardly true^Moderately true^Exactly true
+i_ageing_Question4_SubQuestions,I walk 1@000 kilometres to get to the supermarket every day^I can always manage to solve difficult problems if I try hard enough^If someone opposes me@ I can find the means and ways to get what I want^It is easy for me to stick to my aims and accomplish my goals^I am confident that I could deal efficiently with unexpected events^Thanks to my resourcefulness@ I know how to handle unforseen situations^I can solve most problems if I invest the necessary effort^I can remain calm when facing difficulties becausie I can rely on my coping abilities^When I am confronted with a problem@ I can usually find several solutions^If I am in trouble@ I can usually think of a solution^I can usually handle whatever comes my way
+i_ageing_Question4_HasTextInput,FALSE
+i_ageing_Question8_QuestionID,Self-rated skills
+i_ageing_Question8_MainQuestion,How would you rate your...
+i_ageing_Question8_Choices,0 (Not good at all)^1^2^3^4^5^6^7^8^9^10 (Excellent)
+i_ageing_Question8_SubQuestions,ability to use a computer? For example@ using software applications or using a computer to find or process information^mathematical abilities? For example@ performing addition and subtraction@ or using math to figure out practical things in everyday life.
+i_ageing_Question8_HasTextInput,FALSE
+i_ageing_Question5_QuestionID,Health
+i_ageing_Question5_MainQuestion,In general@ would you say your current…
+i_ageing_Question5_Choices,Poor^Below average^Average^Above average^Excellent
+i_ageing_Question5_SubQuestions,physical health is^mental and emotional health is^level of social connection is
+i_ageing_Question5_HasTextInput,TRUE
+i_ageing_Question5_InputMustBeInt,TRUE
+i_ageing_Question5_TextQuestion,How many regular medications do you currently take? Your answer must use numeric charachters (e.g.@ 2).
+i_ageing_Question00_QuestionID,Tool helpfulness (Knapsack)
+i_ageing_Question00_MainQuestion,Please indicate how helpful you found the following tools when solving the knapsack task (items with weights and values)
+i_ageing_Question00_Choices,N/A (Did not use)^Not at all helpful^Rarely helpful^Sometimes helpful^Generally helpful^Always helpful
+i_ageing_Question00_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ageing_Question00_HasTextInput,TRUE
+i_ageing_Question00_InputMustBeInt,FALSE
+i_ageing_Question00_TextQuestion,If applicable@ briefly explain in 1-2 sentences why you found a tool helpful or not helpful.
+i_ChronicStress_Question6_QuestionID,Self-rated Cognitive Abilities
+i_ChronicStress_Question6_MainQuestion,How would you describe your...
+i_ChronicStress_Question6_Choices,Poor^Below average^Average^Above average^Excellent
+i_ChronicStress_Question6_SubQuestions,day-to-day memory compared to other people your age?^creativity compared to other people your age?^day-to-day problem-solving ability compared to other people your age?
+i_ChronicStress_Question6_HasTextInput,FALSE
+i_ChronicStress_Question0000_QuestionID,Tool helpfulness (Cognitive tasks)
+i_ChronicStress_Question0000_MainQuestion,Please indicate how helpful you found the following tools when solving any of the other cognitive tasks
+i_ChronicStress_Question0000_Choices,N/A (Did not use)^Not at all helpful^Rarely helpful^Sometimes helpful^Generally helpful^Always helpful
+i_ChronicStress_Question0000_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ChronicStress_Question0000_HasTextInput,TRUE
+i_ChronicStress_Question0000_InputMustBeInt,FALSE
+i_ChronicStress_Question0000_TextQuestion,If applicable@ briefly explain in 1-2 sentences why you found a tool helpful or not helpful.
+i_ChronicStress_Question7_QuestionID,Self-rated skills
+i_ChronicStress_Question7_MainQuestion,How would you rate your...
+i_ChronicStress_Question7_Choices,0 (Not good at all)^1^2^3^4^5^6^7^8^9^10 (Excellent)
+i_ChronicStress_Question7_SubQuestions,ability to use a computer? For example@ using software applications or using a computer to find or process information^mathematical abilities? For example@ performing addition and subtraction@ or using math to figure out practical things in everyday life.
+i_ChronicStress_Question7_HasTextInput,FALSE
+i_ChronicStress_QuestionLast_QuestionID,Reliability
+i_ChronicStress_QuestionLast_MainQuestion,Your response to this question will not affect your payment in any way.  Please indicate on the scale below how reliable are your answers to this survey.
+i_ChronicStress_QuestionLast_Choices,0 (Not reliable at all)^1^2^3^4^5^6^7^8^9^10 (Very reliable)
+i_ChronicStress_QuestionLast_SubQuestions,
+i_ChronicStress_QuestionLast_HasTextInput,FALSE
+i_ChronicStress_Question0_QuestionID,Tools Used (Knapsack)
+i_ChronicStress_Question0_MainQuestion,Please indicate how often you used the following tools when solving the knapsack task (items with weights and values)
+i_ChronicStress_Question0_Choices,Did not use at all^Used only once or twice^Used sometimes^Used often^Used almost always^Used always
+i_ChronicStress_Question0_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ChronicStress_Question0_HasTextInput,TRUE
+i_ChronicStress_Question0_InputMustBeInt,FALSE
+i_ChronicStress_Question0_TextQuestion,If you used some other tool@ please specify which one.
+i_ChronicStress_Question000_QuestionID,Tools Used (Cognitive Tasks)
+i_ChronicStress_Question000_MainQuestion,Please indicate how often you used the following tools when solving any of the other cognitive tasks
+i_ChronicStress_Question000_Choices,Did not use at all^Used only once or twice^Used sometimes^Used often^Used almost always^Used always
+i_ChronicStress_Question000_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ChronicStress_Question000_HasTextInput,TRUE
+i_ChronicStress_Question000_InputMustBeInt,FALSE
+i_ChronicStress_Question000_TextQuestion,If you used some other tool@ please specify which one.
+i_ChronicStress_Question1_QuestionID,Motivation for Cognition
+i_ChronicStress_Question1_MainQuestion,Please indicate how far the following statements apply to you personally in this moment?
+i_ChronicStress_Question1_Choices,-3 (does not apply at all)^-2^-1^0^1^2^3 (applies exactly)
+i_ChronicStress_Question1_SubQuestions,Right now@ I would really enjoy a task that involves coming up with new solutions to problems^Right now@ I would prefer a task that is intellectual@ difficult@ and important to one that is somewhat important but does not require much thought^Right now@ I would like to solve a puzzle^If I read something that confuses me right now@ I would just put it down and forget it^Right now@ I would rather do something that requires little thought than something that is sure to challenge my thinking abilities^Right now@ I prefer complex to simple problems^Right now@ I prefer to think about small@ daily projects to long-term ones^Right now@ I would like to avoid situations where there is a likely chance I will have to think in depth about something^Right now@ the notion of thinking abstractly is not appealing to me^Right now@ I would enjoy thinking about an issue even when the results of my thought would have no effect on the outcome of the issue
+i_ChronicStress_Question1_HasTextInput,FALSE
+i_ChronicStress_Question2_QuestionID,Fatigue Assessment Scale
+i_ChronicStress_Question2_MainQuestion,For each statement@ select how often the statement has applied to you over the past month
+i_ChronicStress_Question2_Choices,Never^Sometimes^Regularly^Often^Always
+i_ChronicStress_Question2_SubQuestions,I am bothered by fatigue^I get tired very quickly^I don't do much during the day^I have enough energy for everyday life^Physically@ I feel exhausted^I have problems to start things^I have problems to think clearly^I feel no desire to do anything^Mentally@ I feel exhausted^When I am doing something@ I can concentrate quite well
+i_ChronicStress_Question2_HasTextInput,FALSE
+i_ChronicStress_Question3_QuestionID,BFI Neuroticism
+i_ChronicStress_Question3_MainQuestion,For each statement@ indicate the extent to which you agree or disagree with that statement
+i_ChronicStress_Question3_Choices,Disagree strongly^Disagree a little^Neither agree nor disagree^Agree a little^Agree strongly
+i_ChronicStress_Question3_SubQuestions,I am someone who is depressed@ blue^I am someone who is relaxed@ handles stress well^I am someone who can be tense^I am someone who worries a lot^I am someone who is emotionally stable@ not easily upset^I am someone who can be moody^I am someone who remains calm in tense situations^I am someone who gets nervous easily
+i_ChronicStress_Question3_HasTextInput,FALSE
+i_ChronicStress_Question4_QuestionID,DASS-21
+i_ChronicStress_Question4_MainQuestion,For each statement@ indicate how much the statement applied to you over the past week
+i_ChronicStress_Question4_Choices,Did not apply to me at all^Applied to me to some of the time^Applied to me a good part of the time^Applied to me most of the time
+i_ChronicStress_Question4_SubQuestions,I rely on my sense of sight to see my surroundings^I found it hard to wind down^I was aware of dryness of my mouth^I couldn't seem to experience any positive feeling at all^I experienced breathing difficulty (e.g. excessively rapid breathing@ breathlessness in the absence of physical exertion)^I found it difficult to work up the initiative to do things^I tended to over-react to situations^I experienced trembling (e.g. in the hands)^I felt that I was using a lot of nervous energy^I was worried about situations in which I might panic and make a fool of myself^I felt that I had nothing to look forward to^I found myself getting agitated^I found it difficult to relax^I felt down-hearted and blue^I was intolerant of anything that kept me from getting on with what I was doing^I felt I was close to panic^I was unable to become enthusiastic about anything^I felt I wasn't worth much as a person^I felt that I was rather touchy^I was aware of the action of my heart in the absence of physical exertion (e.g. sense of heart rate increase@ heart missing a beat)^I felt scared without any good reason^I felt that life was meaningless
+i_ChronicStress_Question4_HasTextInput,FALSE
+i_ChronicStress_Question5_QuestionID,STAI-T
+i_ChronicStress_Question5_MainQuestion,For each statement@ indicate how you feel right now@ in this moment
+i_ChronicStress_Question5_Choices,Almost never^Sometimes^Often^Almost always
+i_ChronicStress_Question5_SubQuestions,"How often do you use a time machine to visit the future?^I feel pleasant^I feel nervous and restless^I feel satisfied with myself^I wish I could be as happy as others seem to be^I feel like a failure^I feel rested^I am ""calm@ cool@ and collected""^I feel that difficulties are piling up so that I cannot overcome them^I worry too much over something that really doesn't matter^I am happy^I have disturbing thoughts^I lack self-confidence^I feel secure^I make decisions easily^I feel inadequate^I am content^Some unimportant thought runs through my mind and bothers me^I take disappointments so keenly that I can't put them out of my mind^I am a steady person^I get in a state of tension or turmoil as I think over my recent concerns and interests"
+i_ChronicStress_Question5_HasTextInput,FALSE
+i_ChronicStress_Question00_QuestionID,Tool helpfulness (Knapsack)
+i_ChronicStress_Question00_MainQuestion,Please indicate how helpful you found the following tools when solving the knapsack task (items with weights and values)
+i_ChronicStress_Question00_Choices,N/A (Did not use)^Not at all helpful^Rarely helpful^Sometimes helpful^Generally helpful^Always helpful
+i_ChronicStress_Question00_SubQuestions,A calculator^A pen and paper^An algorithmic solver^Some other tool
+i_ChronicStress_Question00_HasTextInput,TRUE
+i_ChronicStress_Question00_InputMustBeInt,FALSE
+i_ChronicStress_Question00_TextQuestion,If applicable@ briefly explain in 1-2 sentences why you found a tool helpful or not helpful.

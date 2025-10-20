@@ -1,0 +1,22 @@
+{
+    "QuestionID": "Self-rated skills",
+    "MainQuestion": "How would you rate your...",
+    "Choices": [
+      "0 (Not good at all)",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 (Excellent)"
+    ],
+    "SubQuestions": [
+      "ability to use a computer? For example, using software applications or using a computer to find or process information",
+      "mathematical abilities? For example, performing addition and subtraction, or using math to figure out practical things in everyday life."
+    ],
+    "HasTextInput": false
+  }

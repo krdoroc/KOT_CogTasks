@@ -1,0 +1,8 @@
+﻿i_no_instances,40
+i_no_blocks,5
+i_time_limit,1
+i_init_stop_delay,0.3
+i_delta_stop_delay,0.05
+i_no_practice_instances,6
+i_feedback_time,15
+i_rest_time,30

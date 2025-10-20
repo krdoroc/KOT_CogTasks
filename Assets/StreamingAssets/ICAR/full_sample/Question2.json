@@ -1,0 +1,16 @@
+{
+    "QuestionID": "VR.16",
+    "hasImage": false,
+    "QuestionPrompt": "Zach is taller than Matt and Richard is shorter than Zach. Which of the following statements would be most accurate?",
+    "Choices": [
+      "Richard is taller than Matt",
+      "Richard is shorter than Matt",
+      "Richard is as tall as Matt",
+      "It is impossible to tell",
+      "Richard is taller than Zach",
+      "Zach is shorter than Matt",
+      "None of these",
+      "I do not know"
+    ],
+    "CorrectChoiceIndex": 3
+  }

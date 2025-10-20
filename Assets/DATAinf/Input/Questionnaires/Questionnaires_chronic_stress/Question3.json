@@ -1,0 +1,22 @@
+{
+    "QuestionID": "BFI Neuroticism",
+    "MainQuestion": "For each statement, indicate the extent to which you agree or disagree with that statement",
+    "Choices": [
+      "Disagree strongly",
+      "Disagree a little",
+      "Neither agree nor disagree",
+      "Agree a little",
+      "Agree strongly"
+    ],
+    "SubQuestions": [
+      "I am someone who is depressed, blue",
+      "I am someone who is relaxed, handles stress well",
+      "I am someone who can be tense",
+      "I am someone who worries a lot",
+      "I am someone who is emotionally stable, not easily upset",
+      "I am someone who can be moody",
+      "I am someone who remains calm in tense situations",
+      "I am someone who gets nervous easily"
+    ],
+    "HasTextInput": false
+  }

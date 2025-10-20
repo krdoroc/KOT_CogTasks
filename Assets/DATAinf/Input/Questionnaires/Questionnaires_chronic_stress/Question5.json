@@ -1,0 +1,34 @@
+{
+    "QuestionID": "STAI-T",
+    "MainQuestion": "For each statement, indicate how you feel right now, in this moment",
+    "Choices": [
+      "Almost never",
+      "Sometimes",
+      "Often",
+      "Almost always"
+    ],
+    "SubQuestions": [
+      "How often do you use a time machine to visit the future?",
+      "I feel pleasant",
+      "I feel nervous and restless",
+      "I feel satisfied with myself",
+      "I wish I could be as happy as others seem to be",
+      "I feel like a failure",
+      "I feel rested",
+      "I am \"calm, cool, and collected\"",
+      "I feel that difficulties are piling up so that I cannot overcome them",
+      "I worry too much over something that really doesn't matter",
+      "I am happy",
+      "I have disturbing thoughts",
+      "I lack self-confidence",
+      "I feel secure",
+      "I make decisions easily",
+      "I feel inadequate",
+      "I am content",
+      "Some unimportant thought runs through my mind and bothers me",
+      "I take disappointments so keenly that I can't put them out of my mind",
+      "I am a steady person",
+      "I get in a state of tension or turmoil as I think over my recent concerns and interests"
+    ],
+    "HasTextInput": false
+  }

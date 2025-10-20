@@ -1,0 +1,16 @@
+{
+    "QuestionID": "VR.17",
+    "hasImage": false,
+    "QuestionPrompt": "Joshua is 12 years old and his sister is three times as old as he. When Joshua is 23 years old, how old will his sister be?",
+    "Choices": [
+      "35",
+      "39",
+      "44",
+      "47",
+      "53",
+      "57",
+      "None of these",
+      "I do not know"
+    ],
+    "CorrectChoiceIndex": 3
+  }

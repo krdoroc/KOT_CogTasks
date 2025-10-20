@@ -1,0 +1,13 @@
+datetime,block,trial,stop_signal,SSD,response_time,response,correct,practice
+5/09/2024 10:38:59 AM,1,1,False,,0.6444756,left,True,1
+5/09/2024 10:39:01 AM,1,2,False,,0.4222907,left,True,1
+5/09/2024 10:39:03 AM,1,3,False,,0.3959791,right,True,1
+5/09/2024 10:39:04 AM,1,4,False,,0.4254949,left,True,1
+5/09/2024 10:39:06 AM,1,5,False,,0.5787341,right,True,1
+5/09/2024 10:39:08 AM,1,6,False,,0.3943911,left,True,1
+5/09/2024 10:39:09 AM,1,7,True,0.3,0.3960769,right,False,1
+5/09/2024 10:39:11 AM,1,8,True,0.25,0.4256141,right,False,1
+5/09/2024 10:39:23 AM,1,1,False,,0.3958735,right,True,0
+5/09/2024 10:39:24 AM,1,2,False,,0.3970515,right,True,0
+5/09/2024 10:39:26 AM,1,3,False,,0.389168,left,True,0
+5/09/2024 10:39:28 AM,1,4,True,0.3,0.3632526,left,False,0

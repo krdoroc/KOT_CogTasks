@@ -1,0 +1,26 @@
+{
+    "QuestionID": "Motivation for Cognition",
+    "MainQuestion": "Please indicate how far the following statements apply to you personally in this moment?",
+    "Choices": [
+      "-3 (does not apply at all)",
+      "-2",
+      "-1",
+      "0",
+      "1",
+      "2",
+      "3 (applies exactly)"
+    ],
+    "SubQuestions": [
+      "Right now, I would really enjoy a task that involves coming up with new solutions to problems",
+      "Right now, I would prefer a task that is intellectual, difficult, and important to one that is somewhat important but does not require much thought",
+      "Right now, I would like to solve a puzzle",
+      "If I read something that confuses me right now, I would just put it down and forget it",
+      "Right now, I would rather do something that requires little thought than something that is sure to challenge my thinking abilities",
+      "Right now, I prefer complex to simple problems",
+      "Right now, I prefer to think about small, daily projects to long-term ones",
+      "Right now, I would like to avoid situations where there is a likely chance I will have to think in depth about something",
+      "Right now, the notion of thinking abstractly is not appealing to me",
+      "Right now, I would enjoy thinking about an issue even when the results of my thought would have no effect on the outcome of the issue"
+    ],
+    "HasTextInput": false
+  }

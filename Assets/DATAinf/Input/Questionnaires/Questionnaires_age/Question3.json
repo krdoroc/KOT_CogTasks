@@ -1,0 +1,34 @@
+{
+    "QuestionID": "PANAS",
+    "MainQuestion": "To what extent do you feel this way right now, in this moment?",
+    "Choices": [
+      "Very slightly or not at all",
+      "A little",
+      "Moderately",
+      "Quite a bit",
+      "Extremely"
+    ],
+    "SubQuestions": [
+      "Interested",
+      "Active",
+      "Excited",
+      "Alert",
+      "Strong",
+      "Inspired",
+      "Determined",
+      "Attentive",
+      "Enthusiastic",
+      "Proud",
+      "Irritable",
+      "Hostile",
+      "Ashamed",
+      "Guilty",
+      "Nervous",
+      "Distressed",
+      "Upset",
+      "Jittery",
+      "Scared",
+      "Afraid"
+    ],
+    "HasTextInput": false
+  }

@@ -1,0 +1,24 @@
+{
+    "QuestionID": "Fatigue Assessment Scale",
+    "MainQuestion": "For each statement, select how often the statement has applied to you over the past month",
+    "Choices": [
+      "Never",
+      "Sometimes",
+      "Regularly",
+      "Often",
+      "Always"
+    ],
+    "SubQuestions": [
+      "I am bothered by fatigue",
+      "I get tired very quickly",
+      "I don't do much during the day",
+      "I have enough energy for everyday life",
+      "Physically, I feel exhausted",
+      "I have problems to start things",
+      "I have problems to think clearly",
+      "I feel no desire to do anything",
+      "Mentally, I feel exhausted",
+      "When I am doing something, I can concentrate quite well"
+    ],
+    "HasTextInput": false
+  }

@@ -1,0 +1,16 @@
+{
+    "QuestionID": "VR.19",
+    "hasImage": false,
+    "QuestionPrompt": "If the day after tomorrow is two days before Thursday, then what day is it today?",
+    "Choices": [
+      "Friday",
+      "Monday",
+      "Wednesday",
+      "Saturday",
+      "Tuesday",
+      "Sunday",
+      "None of these",
+      "I do not know"
+    ],
+    "CorrectChoiceIndex": 5
+  }

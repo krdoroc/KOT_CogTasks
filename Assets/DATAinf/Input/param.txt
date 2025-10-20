@@ -1,0 +1,5 @@
+timeRest1min:1
+timeRest1max:1
+timeRest2:1
+timeTrial:2
+timeOnlyItems:0

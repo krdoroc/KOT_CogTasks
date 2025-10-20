@@ -1,0 +1,21 @@
+{
+    "QuestionID": "Tool helpfulness (Knapsack)",
+    "MainQuestion": "Please indicate how helpful you found the following tools when solving the knapsack task (items with weights and values)",
+    "Choices": [
+      "N/A (Did not use)",
+      "Not at all helpful",
+      "Rarely helpful",
+      "Sometimes helpful",
+      "Generally helpful",
+      "Always helpful"
+    ],
+    "SubQuestions": [
+      "A calculator",
+      "A pen and paper",
+      "An algorithmic solver",
+      "Some other tool"
+    ],
+    "HasTextInput": true,
+    "InputMustBeInt": false,
+    "TextQuestion": "If applicable, briefly explain in 1-2 sentences why you found a tool helpful or not helpful."
+  }

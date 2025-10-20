@@ -1,0 +1,16 @@
+{
+    "QuestionID": "R3D.3",
+    "hasImage": true,
+    "QuestionPrompt": "All the cubes below have a different image on each side.\nSelect the choice that represents a rotation of the cube labeled X.",
+    "Choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "CorrectChoiceIndex": 2
+  }

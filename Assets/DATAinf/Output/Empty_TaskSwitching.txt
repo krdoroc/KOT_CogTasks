@@ -1,0 +1,17 @@
+datetime,block,trial,stimulus,response_time,response,correct,congruent,congruence_type,practice
+4/09/2024 3:47:34 PM,1,1,I8,5.000308,no response,False,0,0,1
+4/09/2024 3:47:48 PM,2,2,K7,5.000628,no response,False,0,0,1
+4/09/2024 3:48:03 PM,3,3,R5,5.00032,no response,False,0,0,1
+4/09/2024 3:49:15 PM,1,1,M4,2.456276,left,False,1,0,0
+4/09/2024 3:49:25 PM,2,2,K3,2.06794,left,True,0,0,0
+4/09/2024 3:49:37 PM,3,3,R3,2.730509,right,True,0,0,0
+4/09/2024 3:51:44 PM,3,1,M4,2.46074,left,False,1,0,0
+datetime,block,trial,stimulus,response_time,response,correct,congruent,congruence_type,practice
+4/09/2024 4:12:30 PM,3,1,I8,2.159282,right,False,0,0,1
+datetime,block,trial,stimulus,response_time,response,correct,congruent,congruence_type,practice
+4/09/2024 6:30:48 PM,1,1,I8,1.816869,left,True,0,0,1
+4/09/2024 6:30:59 PM,2,2,K7,1.189141,right,False,0,0,1
+4/09/2024 6:31:11 PM,3,3,R5,3.040797,left,False,0,0,1
+4/09/2024 6:31:26 PM,1,1,M4,1.499144,right,True,1,0,0
+4/09/2024 6:31:35 PM,2,2,K3,1.004819,left,True,0,0,0
+4/09/2024 6:31:47 PM,3,3,R3,1.874676,right,True,0,0,0

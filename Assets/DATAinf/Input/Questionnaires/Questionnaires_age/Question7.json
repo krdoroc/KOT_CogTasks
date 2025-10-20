@@ -1,0 +1,17 @@
+{
+    "QuestionID": "Self-rated Cognitive Abilities",
+    "MainQuestion": "How would you describe your...",
+    "Choices": [
+      "Poor",
+      "Below average",
+      "Average",
+      "Above average",
+      "Excellent"
+    ],
+    "SubQuestions": [
+      "day-to-day memory compared to other people your age?",
+      "creativity compared to other people your age?",
+      "day-to-day problem-solving ability compared to other people your age?"
+    ],
+    "HasTextInput": false
+  }

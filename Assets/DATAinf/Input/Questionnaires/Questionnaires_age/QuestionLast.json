@@ -1,0 +1,21 @@
+{
+    "QuestionID": "Reliability",
+    "MainQuestion": "Your response to this question will not affect your payment in any way.\n\nPlease indicate on the scale below how reliable are your answers to this survey.",
+    "Choices": [
+      "0 (Not reliable at all)",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 (Very reliable)"
+    ],
+    "SubQuestions": [
+      ""
+    ],
+    "HasTextInput": false
+  }

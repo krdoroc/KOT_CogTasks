@@ -1,0 +1,6 @@
+PartcipantID:sads
+InitialTimeStamp:16-09-24-902
+1:ItemsNoQuestion;11:ItemsWithQuestion;2:AnswerScreen;21:ParticipantsAnswer;3:InterTrialScreen;4:InterBlockScreen;5:EndScreen
+block;trial;eventType;elapsedTime
+1;1;1;39
+1;1;11;77

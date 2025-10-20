@@ -1,0 +1,21 @@
+{
+    "QuestionID": "Tools Used (Cognitive Tasks)",
+    "MainQuestion": "Please indicate how often you used the following tools when solving any of the other cognitive tasks",
+    "Choices": [
+      "Did not use at all",
+      "Used only once or twice",
+      "Used sometimes",
+      "Used often",
+      "Used almost always",
+      "Used always"
+    ],
+    "SubQuestions": [
+      "A calculator",
+      "A pen and paper",
+      "An algorithmic solver",
+      "Some other tool"
+    ],
+    "HasTextInput": true,
+    "InputMustBeInt": false,
+    "TextQuestion": "If you used some other tool, please specify which one."
+  }

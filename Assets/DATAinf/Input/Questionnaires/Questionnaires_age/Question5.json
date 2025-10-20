@@ -1,0 +1,19 @@
+{
+    "QuestionID": "Health",
+    "MainQuestion": "In general, would you say your current…",
+    "Choices": [
+      "Poor",
+      "Below average",
+      "Average",
+      "Above average",
+      "Excellent"
+    ],
+    "SubQuestions": [
+      "physical health is",
+      "mental and emotional health is",
+      "level of social connection is"
+    ],
+    "HasTextInput": true,
+    "InputMustBeInt": true,
+    "TextQuestion": "How many regular medications do you currently take? Your answer must use numeric charachters (e.g., 2)."
+  }

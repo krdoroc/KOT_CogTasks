@@ -1,0 +1,2 @@
+PartcipantID:sads
+block;trial;submitted;timeSpent;instanceNumber;capacity;itemsSelected;capacitySel;profitSel;itemsOpt;capacityOpt;profitOpt;correct;xyCoordinates;error

@@ -1,0 +1,28 @@
+{
+    "QuestionID": "Aspiration Index",
+    "MainQuestion": "How important is it to you...",
+    "Choices": [
+      "1 (Not at all important)",
+      "2",
+      "3",
+      "4 (Moderately important)",
+      "5",
+      "6",
+      "7 (Very important)"
+    ],
+    "SubQuestions": [
+      "To be rich",
+      "To be financially successful",
+      "To be admired by many people",
+      "To be famous",
+      "To achieve the \"look\" I've been after.",
+      "To have people comment often about how attractive I look.",
+      "To grow and learn new things",
+      "To know and accept who I really am.",
+      "To feel that there are people who really love me, and whom I love.",
+      "To have deep enduring relationships.",
+      "To work to make the world a better place.",
+      "To help others improve their lives."
+    ],
+    "HasTextInput": false
+  }

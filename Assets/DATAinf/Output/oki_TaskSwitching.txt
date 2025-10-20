@@ -1,0 +1,7 @@
+datetime,block,trial,stimulus,response_time,response,correct,congruent,congruence_type,practice
+4/09/2024 7:34:42 PM,1,1,I8,5.000502,no response,False,0,0,1
+4/09/2024 7:34:57 PM,2,2,K7,5.000494,no response,False,0,0,1
+4/09/2024 7:35:11 PM,3,3,R5,5.000506,no response,False,0,0,1
+4/09/2024 7:35:32 PM,1,1,M4,5.000224,no response,False,1,0,0
+4/09/2024 7:35:46 PM,2,2,K3,5.000335,no response,False,0,0,0
+4/09/2024 7:36:01 PM,3,3,R3,5.000132,no response,False,0,0,0

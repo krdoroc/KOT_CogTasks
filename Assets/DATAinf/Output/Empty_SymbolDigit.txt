@@ -1,0 +1,6 @@
+datetime,trailing_time,total_correct,practice
+4/09/2024 3:39:02 PM,12.0003,0,1
+4/09/2024 3:39:11 PM,2.000673,0,0
+datetime,trailing_time,total_correct,practice
+4/09/2024 6:27:52 PM,12.0003,0,1
+4/09/2024 6:28:06 PM,2.000201,0,0

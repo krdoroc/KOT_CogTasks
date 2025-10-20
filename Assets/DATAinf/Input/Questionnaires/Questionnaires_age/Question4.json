@@ -1,0 +1,24 @@
+{
+    "QuestionID": "General Self Efficacy Scale",
+    "MainQuestion": "To what extent do you feel the following statements are true?",
+    "Choices": [
+      "Not at all true",
+      "Hardly true",
+      "Moderately true",
+      "Exactly true"
+    ],
+    "SubQuestions": [
+      "I walk 1,000 kilometres to get to the supermarket every day",
+      "I can always manage to solve difficult problems if I try hard enough",
+      "If someone opposes me, I can find the means and ways to get what I want",
+      "It is easy for me to stick to my aims and accomplish my goals",
+      "I am confident that I could deal efficiently with unexpected events",
+      "Thanks to my resourcefulness, I know how to handle unforseen situations",
+      "I can solve most problems if I invest the necessary effort",
+      "I can remain calm when facing difficulties becausie I can rely on my coping abilities",
+      "When I am confronted with a problem, I can usually find several solutions",
+      "If I am in trouble, I can usually think of a solution",
+      "I can usually handle whatever comes my way"
+    ],
+    "HasTextInput": false
+  }

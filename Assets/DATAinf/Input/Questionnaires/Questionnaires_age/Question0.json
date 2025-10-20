@@ -1,0 +1,21 @@
+{
+    "QuestionID": "Tools Used (Knapsack)",
+    "MainQuestion": "Please indicate how often you used the following tools when solving the knapsack task (items with weights and values)",
+    "Choices": [
+      "Did not use at all",
+      "Used only once or twice",
+      "Used sometimes",
+      "Used often",
+      "Used almost always",
+      "Used always"
+    ],
+    "SubQuestions": [
+      "A calculator",
+      "A pen and paper",
+      "An algorithmic solver",
+      "Some other tool"
+    ],
+    "HasTextInput": true,
+    "InputMustBeInt": false,
+    "TextQuestion": "If you used some other tool, please specify which one."
+  }
