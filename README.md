@@ -1,5 +1,5 @@
-# KOT_CogTasks
-Knapsack optimisation task, cognitive task battery, and questionnaires used in projects investigating the effects of computational hardness and either age or perceived chronic stress on decision-making capacity. 
+# Knapsack Optimisation Task and cognitive task battery
+Knapsack optimisation task, cognitive task battery, and questionnaires used in projects investigating the effects of computational hardness and either age (osf.io/preprints/psyarxiv/qe6uw) or perceived chronic stress (preprint coming soon) on decision-making capacity. 
 
 **⚠️ Important:** These experimental tasks were built to read/write data from/to a proprietary private server (referred to below as DHive), which means the software only *runs* for those with DHive access. We are currently working on creating a flag that allows us to toggle whether to use DHive or local files: once this is complete, we can update this repo with a version that runs locally for all. In the meantime, you can still use the majority of the source code - but anything that reads or writes data will need updating.
 
