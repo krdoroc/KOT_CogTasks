@@ -1049,7 +1049,7 @@ public class DataLoader : MonoBehaviour
 
             // load real instances
             KnapsackOpt.ksinstances = LoadKnapsackInstancesServer(task, KnapsackOpt.numberOfInstances, "");
-            // TODO: add params to sever
+            // load practice instances
             if(GameManager.give_complex_instructions)
             {
                 Debug.Log("Booyaka: checking prac");

@@ -1,7 +1,7 @@
 timeRest1min,1
 timeRest1max,1
-timeRest2,1
-timeTrial,10
+timeRest2,15
+timeTrial,90
 timeOnlyItems,0
 numberOfTrials,10
 numberOfBlocks,3

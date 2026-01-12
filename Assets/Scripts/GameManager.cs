@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
     public static string nback_name = "Recall-1-back"; 
     public static string quest_name = "Questionnaires for Assessment"; // if getting a "Task does not exist" error, try changing this the other option out of "Questionnaires for Assessment" or "Ageing_questionnaires"
     private static string task_name = null;
-    private static List<string> tasks = new List<string> { "SymbolDigit", "NBack", "StopSignal", "TaskSwitching" };  // { "SymbolDigit", "StopSignal", "NBack", "TaskSwitching", "ICAR" };
+    private static List<string> tasks = new List<string> { "SymbolDigit", "StopSignal", "NBack", "TaskSwitching", "ICAR" };
     private static List<string> complex_tasks = new List<string> { "KOT" }; // , "KDT", "TSP" };
     public static List<string> completed_tasks = new List<string> { }; // list of completed cognitive tasks
     private static List<string> scores = new List<string> { }; // list of scores to display at the end
@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
     public Image LargeImage;
     private static Color newColor;
 
-    public static bool questionnaires_completed = true;  // TODO: edit this back to false when questionnaires are needed
+    public static bool questionnaires_completed = false;  
     public static int current_task_number = 1; // stores the sequence of the current task, initialised to 1 as KP is always first
     private static int total_number_of_tasks = complex_tasks.Count + tasks.Count; // total number of cognitive tasks in the study 
     
@@ -302,7 +302,7 @@ public class GameManager : MonoBehaviour
     async void Update()
     {
         string scene_name = SceneManager.GetActiveScene().name;
-        if (scene_name == "KOT") // TODO: add KDT and TSP scenes here later
+        if (scene_name == "KOT") 
         {
             await activeTask.TaskUpdate();
         }
@@ -340,7 +340,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-// TODO: is this needed when not on WebGL?
+
 #if !UNITY_WEBGL || UNITY_EDITOR
         sender?.DispatchMessageQueue();
 #endif
@@ -383,7 +383,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("LoadTrialData");
         }
         // if they just finished a trial, store everything we want to save as a global variable and then load the confidence scene
-        else if (scene_name == "KOT")  // TODO: add KDT and TSP scenes here later
+        else if (scene_name == "KOT")  
         {
             if (activeTask is KnapsackOpt koTask)
             {
@@ -837,9 +837,7 @@ public class GameManager : MonoBehaviour
 
             if (tasks.Count == 0)
             {
-                // TODO: revert to the commented version if we have questionnaires
-                // NextButton.GetComponentInChildren<TMP_Text>().text = "Proceed to questionnaires";  
-                NextButton.GetComponentInChildren<TMP_Text>().text = "Proceed to end";
+                NextButton.GetComponentInChildren<TMP_Text>().text = "Proceed to questionnaires";  
             }
             else
             {
@@ -906,12 +904,9 @@ public class GameManager : MonoBehaviour
         else
         {
             textComponent.text =
-            // TODO: change this for Prolific when relevant
-            //    "Thank you so much for your participation, you have reached the end of the experiment!\n\n" +
-            //    "Please go to Prolific and enter the completion code below to verify your completion.\n\n" +
-            //    "COMPLETION CODE (case sensitive): " + completionCode;
-            "This part of the experiment is over. \n\n" +
-            "Please let the researcher know you have reached this screen.";
+            "Thank you so much for your participation, you have reached the end of the experiment!\n\n" +
+            "Please go to Prolific and enter the completion code below to verify your completion.\n\n" +
+            "COMPLETION CODE (case sensitive): " + completionCode;
 
             ParticipantCompleted();
         }
