@@ -1,7 +1,9 @@
 # Knapsack Optimisation Task and cognitive task battery
 Knapsack optimisation task, cognitive task battery, and questionnaires used in projects investigating the effects of computational hardness and either age (osf.io/preprints/psyarxiv/qe6uw) or perceived chronic stress (preprint coming soon) on decision-making capacity. 
 
-**⚠️ Important:** These experimental tasks were built to read/write data from/to a proprietary private server (referred to below as DHive), which means the software only *runs* for those with DHive access. We are currently working on creating a flag that allows us to toggle whether to use DHive or local files: once this is complete, we can update this repo with a version that runs locally for all. In the meantime, you can still use the majority of the source code - but anything that reads or writes data will need updating.
+**⚠️ Important:** These experimental tasks were built to read/write data from/to a proprietary private server (referred to below as DHive), which means the software only *runs* for those with DHive access. You can still use the majority of the source code - but anything that reads or writes data will need updating. 
+
+**⚠️ Important:** I have recently updated the software to: 1) allow the reading of input parameters from CSV and the writing of data to local CSV files, without the need for DHive, and 2) include detailed instructions, a comprehension quiz, and practice trials for the Knapsack task. Note: these changes appear to work within the Unity editor, but have NOT been thoroughly tested on participants or in browser (using WebGL). The updated version is hosted in the `untested_local_save` branch of this repo.
 
 Welcome, brave scientist, to a dangerous quest: navigating this labyrinthine repo and the beastly scripts lurking within. These scripts are no Minotaur, but rather a Chimera: stitching together scripts from half a dozen PhD students and research assistants, most of whom were learning Unity for the first time. The implementations certainty aren’t optimal or pretty, but they work. Let this ReadMe be the map that guides you through the labyrinth as safely as can be. Godspeed.
 
