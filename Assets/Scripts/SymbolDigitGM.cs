@@ -74,14 +74,14 @@ public class SymbolDigitGM : MonoBehaviour
 
         if (init_task == true)
         {   
-            GameManager.TaskId = DataLoader.GetDatabaseTaskId(GameManager.experimentData, "Digit Symbol Substitution");
-            if (GameManager.practice == true)
+            GameManager.TaskId = DataLoader.GetDatabaseTaskId(GameManager.experimentData, GameManager.symbol_digit_name);
+            if (GameManager.do_practice == true)
             {
-                practice_output = GameManager.practice ? 1 : 0;
+                practice_output = GameManager.do_practice ? 1 : 0;
             }
             else
             {
-                practice_output = GameManager.practice ? 1 : 0;
+                practice_output = GameManager.do_practice ? 1 : 0;
             }
             init_task = false;
             
@@ -91,7 +91,7 @@ public class SymbolDigitGM : MonoBehaviour
         int remainder = item_n % 2; 
         int mid_point = item_n/2;
 
-        if (GameManager.practice == true)
+        if (GameManager.do_practice == true)
         {
             max_time = practice_time;
         }
@@ -306,7 +306,6 @@ public class SymbolDigitGM : MonoBehaviour
         };
 
         Debug.Log("Saving: " + string.Join(", ", outputs.Select(o => $"{o.Name}: {o.Value}")));
-        Debug.Log("Queue size is " + DataSaver.GetQueueSize());
-        DataSaver.AddDataToSave(GameManager.TaskId, outputs);
+        DataSaver.PrepareToSave(outputs, "SymbolDigit");
     }
 }

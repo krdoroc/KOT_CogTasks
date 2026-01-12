@@ -29,7 +29,7 @@ public class WebsocketConnector : MonoBehaviour
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene("trialGame");
+        SceneManager.LoadScene(GameManager.first_task_scene);
     }
 
     private async void OnDestroy()
@@ -37,18 +37,49 @@ public class WebsocketConnector : MonoBehaviour
         await WriteRandomizationToServer(GameManager.randomizationID);
     }
 
+    // private async Task WriteRandomizationToServer(int randomizationID)
+    // {
+    //     var parameters = new List<OutputParameter>
+    //     {
+    //         new($"assigned_rID_{randomizationID}", 1)
+    //     };
+        
+    //     Debug.Log($"Saving randomization ID to server: {randomizationID}");
+    //     DataSaver.sessionID = sessionID;
+    //     if(GameManager.save_session_data)
+    //     {
+    //         DataSaver.AddSessionDataToSave(parameters);  
+    //     }
+    // }
+
     private async Task WriteRandomizationToServer(int randomizationID)
     {
-        var parameters = new List<OutputParameter>
+        if (GameManager.save_write_locally)
         {
-            new($"assigned_rID_{randomizationID}", 1)
-        };
-        
-        Debug.Log($"Saving randomization ID to server: {randomizationID}");
-        DataSaver.sessionID = sessionID;
-        if(GameManager.save_session_data)
-        {
-            DataSaver.AddSessionDataToSave(parameters);  
+            // Standardize headers to match GameManager's session_data format
+            var parameters = new List<OutputParameter>
+            {
+                new OutputParameter("session_metric", $"assigned_rID"),
+                new OutputParameter("session_value", randomizationID.ToString())
+            };
+
+            // Use the central saver
+            DataSaver.PrepareToSave(parameters, "session_data");
         }
+        else
+        {
+            var parameters = new List<OutputParameter>
+            {
+                new($"assigned_rID_{randomizationID}", 1)
+            };
+            
+            if(GameManager.save_session_data)
+            {
+                DataSaver.AddSessionDataToSave(parameters);  
+            }
+        }
+
+        Debug.Log($"Saving randomization ID: {randomizationID}");
+        DataSaver.sessionID = sessionID;
     }
 }

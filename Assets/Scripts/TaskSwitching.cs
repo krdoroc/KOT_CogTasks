@@ -127,7 +127,7 @@ public class TaskSwitching : MonoBehaviour
         stimulus_list = real_stimulus_list;
 
         // initialise params
-        if (GameManager.practice == true)
+        if (GameManager.do_practice == true)
         {
             block1 = practice_block1;
             block2 = practice_block2;
@@ -185,7 +185,7 @@ public class TaskSwitching : MonoBehaviour
                 first_BR_display = true;
             }
             // if halfway through block 3
-            else if (instance == block1+block2+block3/2 & GameManager.practice == false)
+            else if (instance == block1+block2+block3/2 & GameManager.do_practice == false)
             {
                 count = 0;
             }
@@ -314,13 +314,13 @@ public class TaskSwitching : MonoBehaviour
 
             if (init_task == true)
             {
-                if (GameManager.practice == true)
+                if (GameManager.do_practice == true)
                 {
-                    practice_output = GameManager.practice ? 1 : 0;
+                    practice_output = GameManager.do_practice ? 1 : 0;
                 }
                 else
                 {
-                    practice_output = GameManager.practice ? 1 : 0;
+                    practice_output = GameManager.do_practice ? 1 : 0;
                 }
                 init_task = false;
             }
@@ -677,7 +677,7 @@ public class TaskSwitching : MonoBehaviour
     IEnumerator RestScreen()
     {
         enableKeys = false;
-        if (instance == 0 || instance == block1 || instance == block1+block2 || (instance == block1+block2+block3/2 & GameManager.practice == false))
+        if (instance == 0 || instance == block1 || instance == block1+block2 || (instance == block1+block2+block3/2 & GameManager.do_practice == false))
         {
             Rest.enabled = true;
             BlockFocus.gameObject.SetActive(true);
@@ -687,7 +687,7 @@ public class TaskSwitching : MonoBehaviour
         
             if (instance == block1+block2)
             {
-                if (GameManager.practice == false)
+                if (GameManager.do_practice == false)
                 {
                     slider.gameObject.SetActive(true);
                     Rest.transform.GetChild(0).GetComponent<TMP_Text>().text = "Rest";
@@ -729,7 +729,7 @@ public class TaskSwitching : MonoBehaviour
             }
             else if (instance == block1+block2+block3/2)
             {
-                if (GameManager.practice == false)
+                if (GameManager.do_practice == false)
                 {
                     slider.gameObject.SetActive(true);
                     Rest.transform.GetChild(0).GetComponent<TMP_Text>().text = "Rest";
@@ -779,8 +779,7 @@ public class TaskSwitching : MonoBehaviour
 		};
 
         Debug.Log("Saving: " + string.Join(", ", outputs.Select(o => $"{o.Name}: {o.Value}")));
-        Debug.Log("Queue size is " + DataSaver.GetQueueSize());
-        DataSaver.AddDataToSave(GameManager.TaskId, outputs);
+        DataSaver.PrepareToSave(outputs, "Switching");
     }
 }
 

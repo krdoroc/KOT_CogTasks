@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Linq;
 using UnityEngine.Networking;
 using System.Collections;
+using System.IO; // todo: added for local writing, check it works
+using System.Text;   // todo: added for local writing, check it works
+
 
 public class ICAR : MonoBehaviour
 {
@@ -404,7 +407,8 @@ public class ICAR : MonoBehaviour
 		};
 
         Debug.Log("[Q] 0: Saving: " + string.Join(", ", outputs.Select(o => $"{o.Name}: {o.Value}")));
-        Debug.Log("[Q] Queue size before saving data is " + DataSaver.GetQueueSize());
-        DataSaver.AddDataToSave(GameManager.TaskId, outputs);
+
+        DataSaver.PrepareToSave(outputs, "ICAR");
     }
+
 }

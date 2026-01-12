@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using UnityEngine.SceneManagement; 
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
@@ -141,19 +142,19 @@ public class BoardManager : MonoBehaviour
 	//2. The weight and value vectors are uploaded
 	//3. The instance prefab is uploaded
 	void setKSInstance(){
-		
-		int randInstance = GameManager.instanceRandomization[GameManager.globalTrial-1];
+		int globalIndex = (KnapsackOpt.block - 1) * KnapsackOpt.numberOfTrials + (KnapsackOpt.trial - 1);
+		int randInstance = KnapsackOpt.instanceRandomization[globalIndex];
 
 //		Text Quest = GameObject.Find("Question").GetComponent<Text>();
-//		String question = "Can you obtain at least $" + GameManager.ksinstances[randInstance].profit + " with at most " + GameManager.ksinstances[randInstance].capacity +"kg?";
+//		String question = "Can you obtain at least $" + KnapsackOpt.ksinstances[randInstance].profit + " with at most " + KnapsackOpt.ksinstances[randInstance].capacity +"kg?";
 //		Quest.text = question;
 
-		//question = "Can you pack $" + GameManager.ksinstances[randInstance].profit + " if your capacity is " + GameManager.ksinstances[randInstance].capacity +"kg?";
-		//question = "$" + GameManager.ksinstances[randInstance].profit + System.Environment.NewLine + GameManager.ksinstances[randInstance].capacity +"kg?";
-		question = " Max: " + System.Environment.NewLine + GameManager.ksinstances[randInstance].capacity +"kg ";
+		//question = "Can you pack $" + KnapsackOpt.ksinstances[randInstance].profit + " if your capacity is " + KnapsackOpt.ksinstances[randInstance].capacity +"kg?";
+		//question = "$" + KnapsackOpt.ksinstances[randInstance].profit + System.Environment.NewLine + KnapsackOpt.ksinstances[randInstance].capacity +"kg?";
+		question = " Max: " + System.Environment.NewLine + KnapsackOpt.ksinstances[randInstance].capacity +"kg ";
 
-		ws = GameManager.ksinstances [randInstance].weights;
-		vs = GameManager.ksinstances [randInstance].values;
+		ws = KnapsackOpt.ksinstances [randInstance].weights;
+		vs = KnapsackOpt.ksinstances [randInstance].values;
 
 		KSItemPrefab = (GameObject)Resources.Load ("KSItem");
 		// take the KSItem prefab and set its vector3 scale
@@ -313,10 +314,10 @@ public class BoardManager : MonoBehaviour
 	}
 
 	/// Macro function that initializes the Board
-	public void SetupScene(int sceneToSetup)
+	public bool SetupScene(int sceneToSetup)
 	{
 
-		itemClicks.Clear(); // Fix for item Clicks to be correct TODO check
+		itemClicks.Clear(); 
 		setKSInstance();
 
 		//If the bool returned by LayoutObjectAtRandom() is false, then retry again:
@@ -337,8 +338,14 @@ public class BoardManager : MonoBehaviour
 			itemsPlaced = LayoutObjectAtRandom();
 			nt++;
 		}
-		keysON = true;
 
+		if (!itemsPlaced) 
+        {
+            return false; 
+        }
+
+		keysON = true;
+        return true; // Success
 	}
 
 	//Checks if positioning an item in the new position generates an overlap.
@@ -352,7 +359,7 @@ public class BoardManager : MonoBehaviour
 		return overlapValue || overlapWeight;
 	}
 
-	//Updates the timer rectangle size accoriding to the remaining time.
+	//TODO: see if we still need this, in light of the function below. Updates the timer rectangle size accoriding to the remaining time.
 	public void updateTimer(){
 		// timer = GameObject.Find ("Timer").GetComponent<RectTransform> ();
 		// timer.sizeDelta = new Vector2 (timerWidth * (GameManager.tiempo / GameManager.totalTime), timer.rect.height);
@@ -360,21 +367,16 @@ public class BoardManager : MonoBehaviour
 		timer.fillAmount = GameManager.tiempo / GameManager.totalTime;
 	}
 
-	//Sets the triggers for pressing the corresponding keys
-	private async Task setKeyInput()
+	public void updateTimer(float currentTime, float totalTime)
 	{
-		if (GameManager.escena == 1)
-		{
-			await ChangeFromKpScene();
+		Image timer = GameObject.Find ("Timer").GetComponent<Image> ();
+		
+		// Uses the specific numbers you pass in, ignoring GameManager
+		if (totalTime > 0) {
+			timer.fillAmount = currentTime / totalTime;
+		} else {
+			timer.fillAmount = 0;
 		}
-	}
-
-	private async Task ChangeFromKpScene()
-	{
-		if (Input.GetKeyDown (KeyCode.Return)) 
-		{
-			await GameManager.changeToNextScene (itemClicks, 1);
-		} 
 	}
 
 	/// The action to be taken when a button is pressed: Toggles the light and adds the click to itemClicks
@@ -388,7 +390,7 @@ public class BoardManager : MonoBehaviour
 
 		int itemIn=(myLight.enabled)? 1 : 0 ;
 
-		itemClicks.Add (new Vector3 (itemN, itemIn , GameManager.timeTrial - GameManager.tiempo));
+		itemClicks.Add (new Vector3 (itemN, itemIn , KnapsackOpt.timeTrial - KnapsackOpt.instance.current_timer));
 	}
 
 	// Initializes the starting instructions, Start Button and the Input Field for the Participant ID
@@ -477,16 +479,13 @@ public class BoardManager : MonoBehaviour
 
 	private async void Update () {
 		
-		if (keysON) {
-			await setKeyInput ();
-		}
-		
 		// progress through the concise KP instructions on the starting screen
-		if (GameManager.escena == 0 && starting_screen <= 2)
+		if (SceneManager.GetActiveScene().name == "Setup" && starting_screen <= 2)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-				if (GameManager.skip_knapsack || starting_screen >= 2)
+				// skip the concise knapsack instructions if we're skipping the task entirely, giving more detailed instructions later, or if we've already given the concise instructions
+				if (GameManager.skip_complex || GameManager.give_complex_instructions || starting_screen >= 2)
 				{
 					// proceed to start
 					screen_warning.gameObject.SetActive(false);
@@ -496,6 +495,7 @@ public class BoardManager : MonoBehaviour
 						onStartButton();
 					}
 				}
+				// otherwise, give the concise instructions
                 else if (starting_screen == 0)
 				{
 					// display first instruction
@@ -511,29 +511,13 @@ public class BoardManager : MonoBehaviour
 					TMP_Text screen_warning_text = screen_warning.GetComponentInChildren<TMP_Text>();
 					screen_warning_text.text = "Please use clicking to show your thinking. The moment you think an item is good, click on it to select. The moment you change your mind, click on it again to de-select.\n\n" +  
 					"Once finished with your selections, <b>press \"Enter\" to submit your answer.</b>\n\n" +
-					"You can earn a bonus of up to $4 USD based on your performance in this task.\n\n" + 
+					// "You can earn a bonus of up to $4 USD based on your performance in this task.\n\n" + 
 					"<b>Press the \"spacebar\" to begin.</b>";
 					starting_screen++;
 				}
             }
 		}
-		// 	// Detect Ctrl+V or Cmd+V for pasting
-        // else if (GameManager.escena == 0)
-		// {
-		// 	if ((Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.LeftCommand)) && Input.GetKeyDown(KeyCode.V))
-		// 	{
-		// 		PasteFromClipboard();
-		// 	}
-		// }
 	}
-
-	// // Function to manually paste from the system clipboard
-    // void PasteFromClipboard()
-    // {
-    //     string clipboardText = GUIUtility.systemCopyBuffer; // Get clipboard content
-	// 	var pID = GameObject.Find ("ParticipantID").GetComponent<InputField>();
-    //     pID.text += clipboardText; // Append clipboard content to input field's existing text
-    // }
 
 	private async void onStartButton()
     {

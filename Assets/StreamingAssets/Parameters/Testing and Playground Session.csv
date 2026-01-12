@@ -1,0 +1,8 @@
+max_rID,500
+file_digit_symbol,Digit Symbol Substitution Task.csv
+file_stop_signal,Stop Signal Task.csv
+file_nback,Recall-1-back.csv
+file_task_switching,Letters and Numbers Task.csv
+file_icar,ICAR.csv
+file_questionnaire,Questionnaires for Assessment.csv
+file_knapsack,Knapsack decision task.csv

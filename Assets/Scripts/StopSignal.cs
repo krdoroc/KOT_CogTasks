@@ -82,9 +82,9 @@ public class StopSignal : MonoBehaviour
         BlackRightImage.gameObject.SetActive(false);
         
         // set starting params
-        if (GameManager.practice == true)
+        if (GameManager.do_practice == true)
         {
-            practice_output = GameManager.practice ? 1 : 0;
+            practice_output = GameManager.do_practice ? 1 : 0;
             no_instances = no_practice_instances; //5;
             no_blocks = practice_blocks;
         }
@@ -135,7 +135,7 @@ public class StopSignal : MonoBehaviour
         // otherwise, display the next trial
         else 
         {
-            practice_output = GameManager.practice ? 1 : 0;
+            practice_output = GameManager.do_practice ? 1 : 0;
             if (block_trials[instance] % 2 == 0) // left or right arrow
             {
                 left = true; // left arrow
@@ -160,13 +160,13 @@ public class StopSignal : MonoBehaviour
 
             if (init_task == true)
             {
-                if (GameManager.practice == true)
+                if (GameManager.do_practice == true)
                 {
-                    practice_output = GameManager.practice ? 1 : 0;
+                    practice_output = GameManager.do_practice ? 1 : 0;
                 }
                 else
                 {
-                    practice_output = GameManager.practice ? 1 : 0;
+                    practice_output = GameManager.do_practice ? 1 : 0;
                 }
                 init_task = false;
             }
@@ -461,7 +461,7 @@ public class StopSignal : MonoBehaviour
         List<int> stop_right_trials;
 
         // if it's practice, then 50% stop trials
-        if(GameManager.practice == true)
+        if(GameManager.do_practice == true)
         {
             stop_left_trials = left_trials.Take(left_trials.Count / 2).OrderBy(x => rng.Next()).ToList(); // 50% stop
             stop_right_trials = right_trials.Take(right_trials.Count / 2).OrderBy(x => rng.Next()).ToList(); // 50% stop
@@ -499,7 +499,6 @@ public class StopSignal : MonoBehaviour
         };
 
         Debug.Log("Saving: " + string.Join(", ", outputs.Select(o => $"{o.Name}: {o.Value}")));
-        Debug.Log("Queue size is " + DataSaver.GetQueueSize());
-        DataSaver.AddDataToSave(GameManager.TaskId, outputs);
+        DataSaver.PrepareToSave(outputs, "StopSignal");
     }
 }

@@ -559,8 +559,7 @@ public class Questionnaire : MonoBehaviour
         };
 
         Debug.Log("Saving: " + string.Join(", ", outputs.Select(o => $"{o.Name}: {o.Value}")));
-        Debug.Log("Queue size is " + DataSaver.GetQueueSize());
-        DataSaver.AddDataToSave(GameManager.TaskId, outputs);
+        DataSaver.PrepareToSave(outputs, "Questionnaires");
     }
 }
 

@@ -8,6 +8,8 @@ using Dhive;
 using Newtonsoft.Json;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
+using System.Linq;
+using System.IO; 
 
 enum DataType
 {
@@ -198,4 +200,75 @@ public class DataSaver : MonoBehaviour
        DataSaver.participantTrialId = participantTrialId;
        Init();
     }
+
+    // direct data to local save or DHive
+    public static void PrepareToSave(List<OutputParameter> outputs, string task_name)
+    {
+        if (GameManager.save_write_locally)
+        {
+            WriteToCSV(outputs, task_name);  
+        }
+        else
+        {
+            Debug.Log("[Q] Queue size before saving data is " + GetQueueSize());
+            
+            if (task_name == "session_data") 
+            {
+                // Use TrialData (generic) instead of TaskData (specific to a game)
+                AddTrialDataToSave(outputs); 
+            }
+            else
+            {
+                AddDataToSave(GameManager.TaskId, outputs); 
+            }
+        }
+    }
+
+    // function for local saving
+    private static void WriteToCSV(List<OutputParameter> outputs, string task_name)
+    {
+        Debug.Log("[Q] 0: Local Save: " + string.Join(", ", outputs.Select(o => $"{o.Name}: {o.Value}")));
+
+        string directoryPath = Path.Combine(Application.persistentDataPath, "Output");
+        string filePath = Path.Combine(directoryPath, GameManager.participantID + "_" + task_name + ".csv");
+
+        // Create the directory if it doesn't exist yet
+        if (!Directory.Exists(directoryPath))
+        {
+            Directory.CreateDirectory(directoryPath);
+        }
+
+        bool fileExists = File.Exists(filePath);
+
+        using (StreamWriter sw = new StreamWriter(filePath, true)) 
+        {
+            // If file doesn't exist, write headers first
+            if (!fileExists)
+            {
+                string headerLine = "participant_id," + string.Join(",", outputs.Select(o => CleanForCSV(o.Name)));
+                sw.WriteLine(headerLine);
+            }
+
+            // Write data
+            string dataLine = CleanForCSV(GameManager.participantID) + "," + 
+                            string.Join(",", outputs.Select(o => CleanForCSV(o.Value.ToString())));
+            
+            sw.WriteLine(dataLine);
+        }
+        
+        Debug.Log($"[Local Save] Appended to: {filePath}");
+    }
+
+    // Helper function to handle commas in data so Excel/R doesn't break
+    private static string CleanForCSV(string str)
+    {
+        if (string.IsNullOrEmpty(str)) return "";
+        
+        if (str.Contains(","))
+        {
+            return "\"" + str + "\""; 
+        }
+        return str;
+    }
+
 }

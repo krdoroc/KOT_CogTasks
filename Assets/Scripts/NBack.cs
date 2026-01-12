@@ -76,7 +76,7 @@ public class NBack : MonoBehaviour
         GameManager.sender ??= DhiveSender.GetInstance(GameManager.participantTrialId);
 
         // set initial parameters
-        if (GameManager.practice == true)
+        if (GameManager.do_practice == true)
         {
             block1 = practice_block1;
             block2 = practice_block2;
@@ -154,13 +154,13 @@ public class NBack : MonoBehaviour
 
             if (init_task == true)
             {
-                if (GameManager.practice == true)
+                if (GameManager.do_practice == true)
                 {
-                    practice_output = GameManager.practice ? 1 : 0;
+                    practice_output = GameManager.do_practice ? 1 : 0;
                 }
                 else
                 {
-                    practice_output = GameManager.practice ? 1 : 0;
+                    practice_output = GameManager.do_practice ? 1 : 0;
                     starter_cue = new List<string>{"", "", ""};
                 }
                 init_task = false;
@@ -276,7 +276,7 @@ public class NBack : MonoBehaviour
                 enableKeys = false;
                 correct = false;
 
-                if (GameManager.practice == true)
+                if (GameManager.do_practice == true)
                 {
                     if (stimulus_position == 0)
                     {
@@ -563,7 +563,7 @@ public class NBack : MonoBehaviour
             correct = true;
 
             // if practice, give feedback 
-            if (GameManager.practice == true)
+            if (GameManager.do_practice == true)
             {
                 cue.transform.Find("Image").GetComponent<Image>().color = new Color32(0,255,0,255);
             }
@@ -583,7 +583,7 @@ public class NBack : MonoBehaviour
                     correct = false;
 
                     // if practice, give feedback. either way, proceed to the next trial
-                    if (GameManager.practice == true)
+                    if (GameManager.do_practice == true)
                     {        
                         cue.transform.Find("Image").GetComponent<Image>().color = new Color32(255,0,0,255);
                         pop_up_flag_is_for_error = true;
@@ -622,7 +622,6 @@ public class NBack : MonoBehaviour
 		};
 
         Debug.Log("Saving: " + string.Join(", ", outputs.Select(o => $"{o.Name}: {o.Value}")));
-        Debug.Log("Queue size is " + DataSaver.GetQueueSize());
-        DataSaver.AddDataToSave(GameManager.TaskId, outputs);
+        DataSaver.PrepareToSave(outputs, "NBack");
     }
 }
